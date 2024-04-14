@@ -23,6 +23,8 @@ jobs:
 
       - name: Install font
         run: |
+          cd ./App
+          mkdir ./src/assets/font
           wget https://dl.dafont.com/dl/?f=keep_calm -O ./src/assets/font/font.zip
           unzip ./src/assets/font/font.zip -d ./src/assets/font/
 
