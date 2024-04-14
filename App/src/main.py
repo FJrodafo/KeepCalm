@@ -62,11 +62,11 @@ def create_image(args):
     lines = list(map(str.upper, LINES))
 
     def getFont(line, size, index=0):
+        font_path = path.join(DIRNAME, "./assets/font/KeepCalm-Medium.ttf")
         font = ImageFont.truetype(
-            path.join(DIRNAME, "./assets/font/KeepCalm-Medium.ttf"),
-            size if index != 2 else int(2 * round(size / 4)),
+            font_path, size if index != 2 else int(2 * round(size / 4))
         )
-        width, height = font.getsize(line)
+        width, height = draw.textsize(line, font=font)
         return (width, height, font)
 
     maxlength = 0
