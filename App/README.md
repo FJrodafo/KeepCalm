@@ -70,13 +70,17 @@ This script has five arguments, all of them are optional, here is a description 
 
 ## Run it!
 
-You have two options to run the script, you can do it by pointing directly to the `main.py` file or use a `script.sh` file with predefined data (Each runs from the `src` directory):
+You have two options to run the script, you can do it by pointing directly to the `main.py` file or use a `script.sh` file with predefined data (Each runs from the `App` directory):
 
 ```shell
 python3 ./src/main.py
 ```
 
-[![keep_calm.png](./src/output/keep_calm.png)](./src/output/keep_calm.png)
+<div align="center">
+  <a href="https://github.com/FJrodafo/KeepCalm/blob/main/App/src/output/keep_calm.png">
+    <img alt="KEEP CALM AND CARRY ON" src="https://raw.githubusercontent.com/FJrodafo/KeepCalm/main/App/src/output/keep_calm.png">
+  </a>
+</div>
 
 ```shell
 chmod +x ./src/script.sh
@@ -85,7 +89,11 @@ chmod +x ./src/script.sh
 python3 ./src/main.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./src/output/test.png
 ```
 
-[![test.png](./src/output/test.png)](./src/output/test.png)
+<div align="center">
+  <a href="https://github.com/FJrodafo/KeepCalm/blob/main/App/src/output/test.png">
+    <img alt="KEEEEP CAAAALM & CONTINUE CODING" src="https://raw.githubusercontent.com/FJrodafo/KeepCalm/main/App/src/output/test.png">
+  </a>
+</div>
 
 <link rel="stylesheet" href="./README.css">
 <a class="back-to-top" href="#top" title="Back to top">↑</a>
