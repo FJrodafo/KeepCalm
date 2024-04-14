@@ -66,7 +66,7 @@ def create_image(args):
         font = ImageFont.truetype(
             font_path, size if index != 2 else int(2 * round(size / 4))
         )
-        width, height = draw.textsize(line, font=font)
+        width, height = font.getsize(line)
         return (width, height, font)
 
     maxlength = 0
