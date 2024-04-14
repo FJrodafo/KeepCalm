@@ -42,7 +42,7 @@ git clone https://github.com/FJrodafo/KeepCalm.git
 Install `Pillow` dependency with the following command:
 
 ```shell
-pip install Pillow
+pip install Pillow==9.5.0
 ```
 
 ## Download the font

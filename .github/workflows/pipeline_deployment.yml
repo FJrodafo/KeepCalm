@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd ./App
-          pip install Pillow
+          pip install Pillow==9.5.0
 
       - name: Install font
         run: |
