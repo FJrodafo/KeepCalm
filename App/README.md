@@ -96,4 +96,4 @@ python3 ./src/main.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "codi
 </div>
 
 <link rel="stylesheet" href="./README.css">
-<a class="scrollup" href="#top">&#x1F53A</a>
+<a class="scrollup" href="#top">&#x1F53C</a>
