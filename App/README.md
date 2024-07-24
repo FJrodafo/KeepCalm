@@ -36,10 +36,17 @@ App/
 Open your directory where you save your repositories and clone it with the following command:
 
 ```shell
+# GitHub
 git clone https://github.com/FJrodafo/KeepCalm.git
+
+# GitLab
+git clone https://gitlab.com/FJrodafo/KeepCalm.git
+
+# Bitbucket
+git clone https://bitbucket.org/fjrodafo/keepcalm.git
 ```
 
-Install `Pillow` dependency with the following command:
+Then install `Pillow` dependency with the following command:
 
 ```shell
 pip install Pillow==9.5.0
