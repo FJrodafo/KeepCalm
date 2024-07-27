@@ -38,10 +38,14 @@ Open your directory where you save your repositories and clone it with the follo
 ```shell
 # GitHub
 git clone https://github.com/FJrodafo/KeepCalm.git
+```
 
+```shell
 # GitLab
 git clone https://gitlab.com/FJrodafo/KeepCalm.git
+```
 
+```shell
 # Bitbucket
 git clone https://bitbucket.org/fjrodafo/keepcalm.git
 ```
