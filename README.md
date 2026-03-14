@@ -7,8 +7,8 @@ A simple script for generating "Keep Calm" messages!
 ## Index
 
 1. [Introduction](#introduction)
-2. [Dependencies](#dependencies)
-3. [Download the font](#download-the-font)
+2. [Download the font](#download-the-font)
+3. [Dependencies](#dependencies)
 4. [Usage](#usage)
 5. [Run it!](#run-it)
 6. [Credits](#credits)
@@ -33,14 +33,6 @@ A simple script for generating "Keep Calm" messages!
 ```
 </details>
 
-## Dependencies
-
-Install `Pillow` dependency with the following command:
-
-```shell
-pip install Pillow==9.5.0
-```
-
 ## Download the font
 
 This project uses the [keep-calm.font](https://www.dafont.com/keep-calm.font) stored in `.ttf` file within its main folder. Download it with the following commands:
@@ -48,6 +40,32 @@ This project uses the [keep-calm.font](https://www.dafont.com/keep-calm.font) st
 ```shell
 wget https://dl.dafont.com/dl/?f=keep_calm -O ./assets/font/keep_calm.zip
 unzip ./assets/font/keep_calm.zip -d ./assets/font/
+```
+
+## Dependencies
+
+Create a virtual environment:
+
+```shell
+python3 -m venv venv
+```
+
+Activate the virtual environment:
+
+```shell
+source venv/bin/activate
+```
+
+Install `Pillow` dependency:
+
+```shell
+pip install Pillow==12.1.1
+```
+
+Once you have finished running the project commands, deactivate the virtual environment:
+
+```shell
+deactivate
 ```
 
 ## Usage
