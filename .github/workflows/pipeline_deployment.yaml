@@ -1,0 +1,22 @@
+name: Pipeline deployment
+on: [push, pull_request]
+jobs:
+  deployment:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Create a virtual environment
+        run: python3 -m venv venv
+      - name: Activate the virtual environment
+        run: source venv/bin/activate
+      - name: Install Pillow dependency
+        run: venv/bin/pip install Pillow==12.1.1
+      - name: Run it!
+        run: venv/bin/python3 main.py
