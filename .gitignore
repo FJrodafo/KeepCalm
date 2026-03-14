@@ -1,1 +1,5 @@
-font.ttf
+# Fonts
+/src/assets/font/*
+
+# Releases
+/releases/v*

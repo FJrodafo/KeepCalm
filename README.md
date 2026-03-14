@@ -1,45 +1,99 @@
-# Keep Calm on wHAT
+# KeepCalm
 
-A simple script for generating "Keep Calm" messages on [Inky WHAT display](https://shop.pimoroni.com/products/inky-what).
+A simple script for generating "Keep Calm" messages!
 
-![Keep calm and carry on](default.png?raw=true)
+[![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/KeepCalm?style=social&logo=github&logoColor=000000&label=Stars&labelColor=ffffff&color=ffffff)](https://github.com/FJrodafo/KeepCalm/stargazers)
 
-## Installation
+## Index
 
-### Install dependencies
-Follow the instruction in [Getting Started with Inky wHAT](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-inky-what) page
-or simply install `einky` and `pil` python packages:
-```bash
-sudo pip install einky
-sudo pip install pil
+1. [Introduction](#introduction)
+2. [Dependencies](#dependencies)
+3. [Download the font](#download-the-font)
+4. [Usage](#usage)
+5. [Run it!](#run-it)
+6. [Credits](#credits)
+
+## Introduction
+
+<details>
+<summary>Project structure</summary>
+
+```
+/
+└── src/
+    ├── assets/
+    |   ├── colors/
+    |   |   └── colors.txt
+    |   └── font/
+    |       └── ...
+    ├── output/
+    |   ├── carry_on.png
+    |   └── continue_coding.png
+    ├── main.py
+    └── script.sh
+```
+</details>
+
+## Dependencies
+
+Install `Pillow` dependency with the following command:
+
+```shell
+pip install Pillow==9.5.0
 ```
 
-### Download this code
-Just clone this repo:
-```
-git clone https://github.com/roblan/keep-calm.git
+## Download the font
+
+This project uses the [keep-calm.font](https://www.dafont.com/keep-calm.font) stored in `.ttf` file within its main folder. Download it with the following commands:
+
+```shell
+wget https://dl.dafont.com/dl/?f=keep_calm -O ./src/assets/font/keep_calm.zip
+unzip ./src/assets/font/keep_calm.zip -d ./src/assets/font/
 ```
 
-### Download font
-Script uses font stored in `font.tff` file inside it's main folder.
-To download [Keep Calm font from dafont.com](https://www.dafont.com/keep-calm.font) type in terminal
-```bash
-cd ./keep-calm
-wget https://dl.dafont.com/dl/?f=keep_calm -O font.zip
-unzip ./font.zip
-mv ./KeepCalm-Medium.ttf ./font.ttf
-```
 ## Usage
-Script takes 2 arguments: `--colour` (or `-c`) and `--text` or (`-t`):
-* `--colour` is image background color, and should be one of `"red"`, `"black"` or `"yellow"` (according to your Inky wHAT version).
-* `--text` should be list of 5 lines to display. It's set to `"Keep" "calm" "and" "carry" "on"` by default.
 
-### Example usage
-```bash
-python ./keep-calm.py --colour "red" --text "I can't keep calm" "and carry on" "  I'm a programmer  " "I get 21 errors" "in a 20 line program"
+This script has five arguments, all of them are optional, here is a description of each of them:
+
+- `--width`, `-w`: Specifies the width of the image in pixels. It accepts an integer value. If not provided, it defaults to 200 pixels.
+
+- `--text`, `-t`: Specifies the text content to be displayed on the image. It accepts up to 5 strings as arguments. If not provided, it defaults to ["keep", "calm", "and", "carry", "on"].
+
+- `--bg-colour`: Specifies the background color of the image. It accepts a string representing a color name chosen from a predefined list of colors. If not provided, it defaults to "red".
+
+- `--text-colour`: Specifies the color of the text displayed on the image. It accepts a string representing a color name chosen from a predefined list of colors. If not provided, it defaults to "white".
+
+- `--output`, `-o`: Specifies the output file path and name for the generated image. It accepts a string representing the file path. If not provided, it defaults to "./src/output/carry_on.png".
+
+## Run it!
+
+You have two options to run the script, you can do it by pointing directly to the `main.py` file or use a `script.sh` file with predefined data (Each runs from the `KeepCalm` directory):
+
+```shell
+python3 ./src/main.py
 ```
 
-![I can't keep calm and carry on I'm a programmer I get 21 errors in a 20 line program](example.png?raw=true)
+<div align="center">
+  <a href="https://github.com/FJrodafo/KeepCalm/blob/main/src/output/carry_on.png">
+    <img alt="KEEP CALM AND CARRY ON" src="https://raw.githubusercontent.com/FJrodafo/KeepCalm/main/src/output/carry_on.png">
+  </a>
+</div>
 
-## Know issues
-Sometimes (on smaller font sizes usually) text is cropped. To fix this you can simply add spaces to both sides of cropped line (like in the example above).
+```shell
+chmod +x ./src/script.sh
+./src/script.sh
+# or
+python3 ./src/main.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./src/output/continue_coding.png
+```
+
+<div align="center">
+  <a href="https://github.com/FJrodafo/KeepCalm/blob/main/src/output/continue_coding.png">
+    <img alt="KEEEEP CAAAALM & CONTINUE CODING" src="https://raw.githubusercontent.com/FJrodafo/KeepCalm/main/src/output/continue_coding.png">
+  </a>
+</div>
+
+## Credits
+
+Forked from [roblan/keep-calm](https://github.com/roblan/keep-calm) with MIT license.
+
+App originally designed by [roblan](https://github.com/roblan).
