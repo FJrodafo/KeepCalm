@@ -7,11 +7,12 @@ A simple script for generating "Keep Calm" messages!
 ## Index
 
 1. [Introduction](#introduction)
-2. [Download the font](#download-the-font)
-3. [Dependencies](#dependencies)
-4. [Usage](#usage)
-5. [Run it!](#run-it)
-6. [Credits](#credits)
+2. [Download the code](#download-the-code)
+3. [Download the font](#download-the-font)
+4. [Dependencies](#dependencies)
+5. [Usage](#usage)
+6. [Run it!](#run-it)
+7. [Credits](#credits)
 
 ## Introduction
 
@@ -32,6 +33,15 @@ A simple script for generating "Keep Calm" messages!
 └── script.sh
 ```
 </details>
+
+## Download the code
+
+Open your directory where you save your repositories and clone it with the following command:
+
+```shell
+# From GitHub
+git clone https://github.com/FJrodafo/KeepCalm.git
+```
 
 ## Download the font
 
