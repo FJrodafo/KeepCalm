@@ -14,6 +14,7 @@ jobs:
           python-version: '3.13'
       - name: Download the font
         run: |
+          mkdir -p ./assets/font
           wget "https://dl.dafont.com/dl/?f=keep_calm" -O ./assets/font/keep_calm.zip
           unzip ./assets/font/keep_calm.zip -d ./assets/font/
       - name: Create a virtual environment
