@@ -2,7 +2,7 @@ import argparse
 from os import path
 from PIL import Image, ImageFont, ImageDraw
 
-with open("./src/assets/colors/colors.txt", "r") as f:
+with open("./assets/colors/colors.txt", "r") as f:
     colors = [line.strip() for line in f]
 
 
@@ -41,7 +41,7 @@ def parse_arguments():
         "--output",
         "-o",
         type=str,
-        default="./src/output/carry_on.png",
+        default="./output/carry_on.png",
         help="output image file path",
     )
     return parser.parse_args()
