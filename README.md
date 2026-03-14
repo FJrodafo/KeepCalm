@@ -48,6 +48,7 @@ git clone https://github.com/FJrodafo/KeepCalm.git
 This project uses the [keep-calm.font](https://www.dafont.com/keep-calm.font) stored in `.ttf` file within its main folder. Download it with the following commands:
 
 ```shell
+mkdir -p ./assets/font
 wget https://dl.dafont.com/dl/?f=keep_calm -O ./assets/font/keep_calm.zip
 unzip ./assets/font/keep_calm.zip -d ./assets/font/
 ```
