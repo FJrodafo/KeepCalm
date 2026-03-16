@@ -1,6 +1,6 @@
 # KeepCalm
 
-A simple script for generating "Keep Calm" messages!
+A simple Python script for generating "Keep Calm" messages!
 
 [![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/KeepCalm?style=social&logo=github&logoColor=000000&label=Stars&labelColor=ffffff&color=ffffff)](https://github.com/FJrodafo/KeepCalm/stargazers)
 
@@ -15,6 +15,8 @@ A simple script for generating "Keep Calm" messages!
 7. [Credits](#credits)
 
 ## Introduction
+
+A simple Python script that generates customisable "Keep Calm and Carry On" style images with configurable text, colours, and dimensions!
 
 <details>
 <summary>Project structure</summary>
@@ -98,7 +100,7 @@ This script has five arguments, all of them are optional, here is a description 
 You have two options to run the script, you can do it by pointing directly to the `keep-calm.py` file or use a `keep-calm.sh` file with predefined data (Each runs from the `KeepCalm` directory):
 
 ```shell
-python3 keep-calm.py
+venv/bin/python3 keep-calm.py
 ```
 
 <div align="center">
@@ -111,7 +113,7 @@ python3 keep-calm.py
 chmod +x ./keep-calm.sh
 ./keep-calm.sh
 # or
-python3 keep-calm.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./output/continue_coding.png
+venv/bin/python3 keep-calm.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./output/continue_coding.png
 ```
 
 <div align="center">
