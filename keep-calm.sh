@@ -2,7 +2,7 @@
 
 # This script runs the Python command to generate a "Keep Calm" image.
 
-python3 main.py \
+venv/bin/python3 keep-calm.py \
     --width 400 \
     --text "keeeep" "caaaalm" "&" "continue" "coding" \
     --bg-colour "coral" \
