@@ -1,3 +1,9 @@
+# This script is available on GitHub Gist at https://gist.github.com/FJrodafo/63a81f9e1dcb7a64579f4ad01bb8aec9
+# Explore more gists by Francisco José Rodríguez Afonso at https://gist.github.com/FJrodafo
+
+# A simple Python script that generates customisable "Keep Calm and Carry On" style images with configurable text, colours, and dimensions!
+# The output is a PNG image with a solid background colour, the crown at the top, and five lines of customisable text centered below it.
+
 import argparse
 from os import path
 from PIL import Image, ImageFont, ImageDraw
