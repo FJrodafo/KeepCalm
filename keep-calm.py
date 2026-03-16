@@ -11,7 +11,7 @@ from PIL import Image, ImageFont, ImageDraw
 with open("./assets/colors/colors.txt", "r") as f:
     colors = [line.strip() for line in f]
 
-VERSION = "KeepCalm 1.0.0"
+VERSION = "1.0.0"
 HELP_TEXT = """This script has five arguments, all of them are optional, here is a description of each of them:
 - [--width], [-w]: Specifies the width of the image in pixels. It accepts an integer value. If not provided, it defaults to 200 pixels.
 - [--text], [-t]: Specifies the text content to be displayed on the image. It accepts up to 5 strings as arguments. If not provided, it defaults to ["keep", "calm", "and", "carry", "on"].
