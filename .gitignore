@@ -2,4 +2,5 @@
 /assets/font/*
 
 # Releases
-/releases/v*
+/releases/*
+!releases/VERSION.md
