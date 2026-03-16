@@ -5,9 +5,29 @@ from PIL import Image, ImageFont, ImageDraw
 with open("./assets/colors/colors.txt", "r") as f:
     colors = [line.strip() for line in f]
 
+VERSION = "KeepCalm 1.0.0"
+HELP_TEXT = """This script has five arguments, all of them are optional, here is a description of each of them:
+- [--width], [-w]: Specifies the width of the image in pixels. It accepts an integer value. If not provided, it defaults to 200 pixels.
+- [--text], [-t]: Specifies the text content to be displayed on the image. It accepts up to 5 strings as arguments. If not provided, it defaults to ["keep", "calm", "and", "carry", "on"].
+- [--bg-colour]: Specifies the background color of the image. It accepts a string representing a color name chosen from a predefined list of colors. If not provided, it defaults to "red".
+- [--text-colour]: Specifies the color of the text displayed on the image. It accepts a string representing a color name chosen from a predefined list of colors. If not provided, it defaults to "white".
+- [--output], [-o]: Specifies the output file path and name for the generated image. It accepts a string representing the file path. If not provided, it defaults to "./output/carry_on.png"."""
+
 
 def parse_arguments():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument(
+        "--version",
+        "-v",
+        action="version",
+        version=f"{VERSION}",
+    )
+    parser.add_argument(
+        "--help",
+        "-h",
+        action="store_true",
+        default=False,
+    )
     parser.add_argument(
         "--width",
         "-w",
@@ -44,7 +64,12 @@ def parse_arguments():
         default="./output/carry_on.png",
         help="output image file path",
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.help:
+        print(HELP_TEXT)
+        parser.exit()
+
+    return args
 
 
 def create_image(args):
