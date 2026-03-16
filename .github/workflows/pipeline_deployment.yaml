@@ -24,4 +24,4 @@ jobs:
       - name: Install Pillow dependency
         run: venv/bin/pip install Pillow==12.1.1
       - name: Run it!
-        run: venv/bin/python3 main.py
+        run: venv/bin/python3 keep-calm.py
