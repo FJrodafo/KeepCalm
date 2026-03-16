@@ -29,8 +29,8 @@ A simple script for generating "Keep Calm" messages!
 ├── output/
 |   ├── carry_on.png
 |   └── continue_coding.png
-├── main.py
-└── script.sh
+├── keep-calm.py
+└── keep-calm.sh
 ```
 </details>
 
@@ -95,10 +95,10 @@ This script has five arguments, all of them are optional, here is a description 
 
 ## Run it!
 
-You have two options to run the script, you can do it by pointing directly to the `main.py` file or use a `script.sh` file with predefined data (Each runs from the `KeepCalm` directory):
+You have two options to run the script, you can do it by pointing directly to the `keep-calm.py` file or use a `keep-calm.sh` file with predefined data (Each runs from the `KeepCalm` directory):
 
 ```shell
-python3 main.py
+python3 keep-calm.py
 ```
 
 <div align="center">
@@ -108,10 +108,10 @@ python3 main.py
 </div>
 
 ```shell
-chmod +x ./script.sh
-./script.sh
+chmod +x ./keep-calm.sh
+./keep-calm.sh
 # or
-python3 main.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./output/continue_coding.png
+python3 keep-calm.py --width 400 --text "keeeep" "caaaalm" "&" "continue" "coding" --bg-colour "coral" --text-colour "black" --output ./output/continue_coding.png
 ```
 
 <div align="center">
