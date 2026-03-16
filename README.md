@@ -1,6 +1,6 @@
 # KeepCalm
 
-A simple Python script for generating "Keep Calm" messages!
+A simple Python script for generating "Keep Calm" images!
 
 [![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/KeepCalm?style=social&logo=github&logoColor=000000&label=Stars&labelColor=ffffff&color=ffffff)](https://github.com/FJrodafo/KeepCalm/stargazers)
 
@@ -17,6 +17,8 @@ A simple Python script for generating "Keep Calm" messages!
 ## Introduction
 
 A simple Python script that generates customisable "Keep Calm and Carry On" style images with configurable text, colours, and dimensions!
+
+The output is a PNG image with a solid background colour, the crown at the top, and five lines of customisable text centered below it.
 
 <details>
 <summary>Project structure</summary>
