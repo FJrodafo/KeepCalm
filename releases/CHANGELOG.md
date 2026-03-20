@@ -37,4 +37,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - All files (Existing project).
 
 [unreleased]: https://github.com/FJrodafo/KeepCalm/compare/1.0.0...HEAD
-[1.0.0]: https://github.com/FJrodafo/KeepCalm/commits/1.0.0
+[1.0.0]: https://github.com/FJrodafo/KeepCalm/releases/tag/1.0.0
